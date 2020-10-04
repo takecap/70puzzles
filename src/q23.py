@@ -12,3 +12,12 @@ def search(sequence, coin, times, patterns):
     search(sequence + 'W', coin+1, times-1, patterns)
     if coin > 1:
       search(sequence + 'L', coin-1, times-1, patterns)
+
+def main():
+  patterns = []
+  print('SEARCHING...')
+  search('', 10, 24, patterns)
+  print('TOTAL: ', len(patterns))
+
+if __name__ == '__main__':
+  main()

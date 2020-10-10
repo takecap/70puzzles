@@ -8,7 +8,7 @@ def init_ban():
   ban[-1] = [-1] * 11
   return ban
 
-# masu: (m, n), direction: (±1, ±1), num: int
+# masu: (m, n), direction: (±1, ±1)
 def search(ban, masu, direction):
   value = ban[masu[0]][masu[1]]
   if value == -1: # 探索対象のマスが外枠 or 飛車角のマスの場合

@@ -51,7 +51,7 @@ def search(week):
   nums.sort()
   res = nums[0] * 5
   for num in nums[1:]:
-    temp = -1
+    temp = 0
     for c in week:
       if c >= num:
         temp += num
